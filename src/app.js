@@ -3,6 +3,8 @@ const hbs = require('hbs')
 
 const app = express();
 
+
+
 const path = require('path')
 
 const PublicPath = path.join(__dirname, '../public');
@@ -58,3 +60,5 @@ app.get('*', (req, res)=>{
 app.listen(3000, ()=>{
     console.log('The server is working');
 })
+
+console.log("Checking git status")
